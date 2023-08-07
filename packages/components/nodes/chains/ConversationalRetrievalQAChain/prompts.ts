@@ -56,9 +56,5 @@ We have the opportunity to refine the existing answer (only if needed) with some
 Given the new context, refine the original answer to better answer the question. 
 If you can't find answer from the context, return the original answer.`
 
-export const CUSTOM_QUESTION_GENERATOR_CHAIN_PROMPT = `Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, answer in the same language as the follow up question. include it in the standalone question.
-
-Chat History:
-{chat_history}
-Follow Up Input: {question}
-Standalone question:`
+export const CUSTOM_QUESTION_GENERATOR_CHAIN_PROMPT = `Given the question about movie recommendation, answer the question to be a standalone movie question, answer in the same language as the follow up question. include it in the standalone question.
+Standalone question: {question}`
